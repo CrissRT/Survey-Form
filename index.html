@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Share your passion with us</p>
+  <form id="survey-form" action="">
+    <!--Personal Data-->
+    <fieldset>
+      <label id="name-label">Enter Your First Name: <input type="text" name="first-name" id="name"  placeholder="E.g. Craig" required></label>
+      <label id="surname-label">Enter Your Last Name: <input type="text" name="last-name" id="surname" placeholder="E.g. Pierson" requireds></label>
+      <label id="email-label">Enter Your Email: <input type="email" name="email" id="email" placeholder="xxxxxx@xxx.xxx" required></label>
+      <label id="number-label">Enter Your Age: <input type="number" name="age" id="number" required min="13" max="120" placeholder="13-120"></label>
+    </fieldset>
+    <!--Movie Genre-->
+    <fieldset>
+        <label id="label-movie">Select Your favourite movie genre:</label>
+        <select name="movie-genres" id="dropdown">
+          <option value="">Select a genre</option>
+          <option value="drama">Drama</option>
+          <option value="comedy">Comedy</option>
+          <option value="action">Action</option>
+        </select>
+    </fieldset>
+    <!--Music Genre-->
+    <fieldset>
+      <label id="label-music">Select Your favourite music genre:</label>
+      <label><input type="radio" class="music" name="music" value="jazz"> Jazz</label>
+      <label><input type="radio" class="music" name="music" value="rock"> Rock</label>
+      <label><input type="radio" class="music" name="music" value="classical"> Classical</label>
+    </fieldset>
+    <!--Played Sports-->
+    <fieldset>
+      <label id="label-sports">What type of sports did you play?</label>
+      <label><input type="checkbox" class="sports" name="sports" value="basketball"> Basketball</label>
+      <label><input type="checkbox" class="sports" name="sports" value="soccer"> Soccer</label>
+      <label><input type="checkbox" class="sports" name="sports" value="badminton"> Soccer</label>
+      <label><input type="checkbox" class="sports" name="sports" value="football"> Football</label>
+    </fieldset>
+    <!--Happy Stuff-->
+    <fieldset>
+      <label id="label-textarea" for="textarea-make-you-happy">What stuff make You happy?</label><textarea name="textarea-make-you-happy" id="textarea-make-you-happy" rows="2" placeholder="E.g. I like swimming"></textarea>
+    </fieldset>
+    <button type="submit" name="button" id="submit">Submit</button>
+  </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

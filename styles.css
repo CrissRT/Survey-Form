@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1d122b;
+  color: #f5f6f7;
+  font-family: Tahoma;
+}
+
+h1, p {
+  margin: 2em auto auto auto;
+  text-align: center;
+}
+
+p{
+  margin: 0.5em auto 1.5em auto;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+  padding-left: 0;
+  margin-bottom: 0.6rem;
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #3b3b4f;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 0.4em;
+  background-color: #381365;
+  color:white;
+}
+
+.music, .sports {
+  width: unset;
+}
+
+textarea,select {
+  width: 100%;
+  background-color: #381365;
+  color:white;
+}
+button{
+  width:100%;
+  background-color: #381365;
+  color: white;
+  border:0.2em solid #8257b7;
+  margin-bottom: 2em;
+}
+
+::placeholder {
+  color:rgba(255,255,255, 0.7);
+}
